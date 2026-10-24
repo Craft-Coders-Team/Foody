@@ -1,12 +1,143 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/images/logo.png" />
+    <meta name="twitter:image" content="/images/logo.png" />
+    <meta name="description" content="Foody is a modern restaurant website designed to showcase food items through an attractive and user-friendly interface. It focuses on clean layouts, appealing visuals, and responsive design to provide a smooth browsing experience across desktop and mobile devices." />
+    <meta name="keywords" content="restaurant website, food items, modern design, responsive layout, user-friendly interface, attractive visuals, clean layouts, browsing experience" />
+    <meta name="author" content="Amany Mohamed" />
+    <meta name="robots" content="index, follow" />
+
+    <title>FOODY | Our Top Recipes</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Foody</title>
+    <script src="main.js" defer></script>
 </head>
+
 <body>
-    
+
+    <main>
+        <section class="top receipts">
+            <h2>Our Top Recipes</h2>
+
+            <p class="section-description">
+                Discover our top four recipes from around the world.
+                Explore delicious ingredients and learn how to prepare
+                your favorite dishes at home.
+            </p>
+
+            <div class="receipts-container">
+
+                <!-- Recipe 1 -->
+                <article class="receipt">
+                    <img src="images/recipe1.jpg"
+                         alt="Thai green curry"
+                         loading="lazy">
+
+                    <h3>Thai Green Curry</h3>
+
+                    <p>
+                        A flavorful Thai green curry made with coconut milk,
+                        fresh herbs, vegetables, and your choice of protein.
+                    </p>
+
+                    <button class="recipe-btn" data-recipe="thai">
+                        See Recipe
+                    </button>
+                </article>
+
+                <!-- Recipe 2 -->
+                <article class="receipt">
+                    <img src="images/recipe2.jpg"
+                         alt="Mango sticky rice"
+                         loading="lazy">
+
+                    <h3>Mango Sticky Rice</h3>
+
+                    <p>
+                        A traditional Thai dessert featuring sweet sticky rice,
+                        ripe mango slices, and creamy coconut milk.
+                    </p>
+
+                    <button class="recipe-btn" data-recipe="mango">
+                        See Recipe
+                    </button>
+                </article>
+
+                <!-- Recipe 3 -->
+                <article class="receipt">
+                    <img src="images/recipe3.jpg"
+                         alt="Italian tiramisu"
+                         loading="lazy">
+
+                    <h3>Italian Tiramisu</h3>
+
+                    <p>
+                        A classic Italian dessert made with coffee-soaked
+                        ladyfingers, creamy mascarpone, and cocoa powder.
+                    </p>
+
+                    <button class="recipe-btn" data-recipe="tiramisu">
+                        See Recipe
+                    </button>
+                </article>
+
+                <!-- Recipe 4 -->
+                <article class="receipt">
+                    <img src="images/recipe4.jpg"
+                         alt="Turkish kebabs"
+                         loading="lazy">
+
+                    <h3>Turkish Kebabs</h3>
+
+                    <p>
+                        Tender grilled meat seasoned with aromatic Turkish
+                        spices and fresh herbs, served with grilled vegetables.
+                    </p>
+
+                    <button class="recipe-btn" data-recipe="kebab">
+                        See Recipe
+                    </button>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Recipe Modal -->
+    <div class="recipe-modal"
+         id="recipeModal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="recipeTitle"
+         aria-hidden="true">
+
+        <div class="recipe-content">
+
+            <button class="close-btn"
+                    id="closeRecipe"
+                    aria-label="Close recipe">
+                &times;
+            </button>
+
+            <img id="recipeImage" src="" alt="">
+
+            <div class="recipe-details">
+                <h2 id="recipeTitle"></h2>
+
+                <p id="recipeDescription"></p>
+
+                <h3>Ingredients</h3>
+                <ul id="recipeIngredients"></ul>
+
+                <h3>Instructions</h3>
+                <ol id="recipeInstructions"></ol>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
