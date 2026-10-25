@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="/images/logo.png" />
     <meta name="twitter:image" content="/images/logo.png" />
@@ -14,23 +14,51 @@
     <title>FOODY | Our Top Recipes</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header-hero.css">
     <script src="main.js" defer></script>
 </head>
 
 <body>
-
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="#home" class="site-header__logo">Foody</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu"
+                aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>   
+            <nav id="primary-nav" class="site-nav" aria-label="Primary">
+                <ul class="site-nav__list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <h1 class="hero__title">Welcome to our restaurant!</h1>
+                <p class="hero__text">
+                    We serve delicious and fresh food, with a focus on our signature dishes
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Quisquam, quam. Magnam,
+                    consequuntur..
+                </p>
+                <a href="#recipes" class="hero__btn">See Our Recipes</a>
+            </div>
+        </section>
         <section class="top receipts">
             <h2>Our Top Recipes</h2>
-
             <p class="section-description">
                 Discover our top four recipes from around the world.
                 Explore delicious ingredients and learn how to prepare
                 your favorite dishes at home.
             </p>
-
             <div class="receipts-container">
-
                 <!-- Recipe 1 -->
                 <article class="receipt">
                     <img src="images/recipe1.jpg"
