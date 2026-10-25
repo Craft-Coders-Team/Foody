@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    outline: 0;
+    border: 0;
+
+    position: relative;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    max-width: 100svw;
+    height: 100svh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+}
+
+nav ul a:hover {
+    color: rgb(187, 77, 0);
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+}
+
+main input {
+    padding: 10px;
+    width: 80%;
+    border: 2px solid rgb(187, 77, 0);
+    border-radius: 5px;
+}
+
+main input:focus {
+    outline: none;
+    border-color: rgb(4, 4, 4);
+}
+
+
+.recipts_Cointainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 60px;
+}
+
+.recipt {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border-bottom:2px solid rgb(225, 113, 0);
+}
+
+.recipt p {
+    color: rgb(74, 85, 101);
+}
+
+.recipt img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+.recipt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recipt-info a {
+    color: rgb(187, 77, 0);
+    font-weight: bold;
+}
+section h2 {
+    color: rgb(187, 77, 0);
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recipt {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .recipts_Cointainer {
+        padding: 20px;
+    }
+}
