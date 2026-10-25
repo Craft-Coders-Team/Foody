@@ -15,10 +15,12 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header-hero.css">
+    <link rel="stylesheet" href="css/chefs.css">
     <script src="main.js" defer></script>
 </head>
 
 <body>
+    <!-- header -->
     <header class="site-header">
         <div class="site-header__inner">
             <a href="#home" class="site-header__logo">Foody</a>
@@ -39,6 +41,7 @@
         </div>
     </header>
     <main>
+        <!-- hero section -->
         <section class="hero" id="home">
             <div class="hero__content">
                 <h1 class="hero__title">Welcome to our restaurant!</h1>
@@ -167,5 +170,53 @@
 
         </div>
     </div>
+
+    <!-- chefs -->
+    <section class="chefs" id="chefs">
+        <div class="chefs__inner">
+            <h2 class="chefs__title">Meet Our Top Chefs</h2>
+            <p class="chefs__intro">
+                Our talented chefs bring passion, creativity, and expertise to every dish.
+                Get to know the masterminds behind our menu.
+            </p>
+        
+            <div class="chefs__grid">
+                <article class="chef-card">
+                    <img class="chef-card__img" src="images/chef1.webp" alt="Chef John Doe">
+                    <div class="chef-card__body">
+                        <h3 class="chef-card__name">Chef John Doe</h3>
+                        <p class="chef-card__role">Head Chef</p>
+                        <p class="chef-card__bio">
+                            With over 15 years of experience, Chef John specializes in modern
+                            European cuisine.
+                        </p>
+                    </div>
+                </article>
+                <article class="chef-card">
+                    <img class="chef-card__img" src="images/chef2.webp" alt="Chef Jane Smith">
+                    <div class="chef-card__body">
+                        <p class="chef-card__role">Pastry Chef</p>
+                        <h3 class="chef-card__name">Chef Jane Smith</h3>
+                        <p class="chef-card__bio">
+                            Chef Jane is renowned for her exquisite desserts and creative pastry
+                            designs.
+                        </p>
+                    </div>
+                </article>
+                <article class="chef-card">
+                    <img class="chef-card__img" src="images/chef3.webp" alt="Chef Mike Johnson">
+                    <div class="chef-card__body">
+                        <h3 class="chef-card__name">Chef Mike Johnson</h3>
+                        <p class="chef-card__role">Sous Chef</p>
+                        <p class="chef-card__bio">
+                            A master of Asian fusion, Chef Mike brings bold flavors to every
+                            dish.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>

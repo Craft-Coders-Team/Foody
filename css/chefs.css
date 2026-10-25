@@ -1,0 +1,100 @@
+/* Add to style.css */
+
+.chefs {
+  background: #f9fafb;
+  color: #111827;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 4vw, 2rem);
+}
+
+.chefs__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chefs__title {
+  margin: 0 0 1.25rem;
+  text-align: center;
+  font-size: clamp(1.9rem, 5vw, 2.6rem);
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111827;
+}
+
+.chefs__intro {
+  max-width: 70ch;
+  margin: 0 auto clamp(2rem, 6vw, 4rem);
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.chefs__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.chef-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.chef-card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  background: #e5e7eb; /* shows while the image is empty or loading */
+}
+
+.chef-card__body {
+  padding: 1.5rem;
+}
+
+.chef-card__name {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.chef-card__role {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  color: #d9690a;
+}
+
+.chef-card__bio {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* Tablet: 2 columns, third card centered on its own row */
+@media (max-width: 992px) {
+  .chefs__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .chef-card:nth-child(3):last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 0.625rem);
+  }
+}
+
+/* Mobile: single column */
+@media (max-width: 600px) {
+  .chefs__grid { grid-template-columns: 1fr; }
+
+  .chef-card:nth-child(3):last-child {
+    width: auto;
+    justify-self: stretch;
+  }
+
+  .chef-card__body { padding: 1.25rem; }
+}
