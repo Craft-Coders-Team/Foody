@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about Foody: our mission, our story, and the team behind every dish." />
+    <meta name="author" content="Amany Mohamed and Assem Karam" />
+    <meta name="robots" content="index, follow" />
+
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/header-hero.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html#home" class="site-header__logo">Foody</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu"
+                aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <nav id="primary-nav" class="site-nav" aria-label="Primary">
+                <ul class="site-nav__list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html" class="is-active">About</a></li>
+                    <li><a href="Recipts/index.html">Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- about -->
+    <main class="about">
+        <section class="about__section">
+            <h2>Our Mission</h2>
+            <p>
+                At <strong>Foody</strong>, we are passionate about delivering delicious, high-quality
+                meals that bring people together. Our mission is to create unforgettable dining
+                experiences by combining fresh ingredients, innovative recipes, and a commitment
+                to excellence.
+            </p>
+        </section>
+
+        <div class="about__gallery">
+            <img src="../images/F1.webp" alt="Fresh salad on a dark plate with a fork" loading="lazy">
+            <img src="../images/F2.webp" alt="Burger with fresh greens on a dark board" loading="lazy">
+            <img src="../images/F3.webp" alt="Burger and fries on a slate board" loading="lazy">
+        </div>
+
+        <section class="about__section">
+            <h2>Our Story</h2>
+            <p>
+                Founded in 2025, <strong>Foody</strong> started as a small family-owned restaurant
+                with a big dream. Over the years, we’ve grown into a beloved destination for food
+                lovers, known for our warm hospitality and mouthwatering dishes. Every meal we serve
+                is a reflection of our dedication to quality and our love for bringing people together.
+            </p>
+        </section>
+
+        <section class="about__section">
+            <h2>Meet Our Team</h2>
+            <p>
+                Our team is made up of passionate chefs, friendly staff, and dedicated professionals
+                who work tirelessly to ensure every visit is exceptional. We believe that great food
+                starts with great people, and we’re proud of the talented individuals who make
+                <strong>Foody</strong> what it is today.
+            </p>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">© 2025 Developed by Eng. Assem Karam &amp; Amany Mohammed</footer>
+
+    <script>
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('primary-nav');
+        toggle.addEventListener('click', function () {
+            var open = nav.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>

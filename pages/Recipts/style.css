@@ -17,34 +17,6 @@ body {
     height: 100svh;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background-color: black;
-    color: white;
-    align-items: center;
-}
-
-header h1 {
-    font-weight: bold;
-}
-
-header nav ul {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-nav ul a {
-    color: white;
-}
-
-nav ul a:hover {
-    color: rgb(187, 77, 0);
-    font-weight: bold;
-}
-
 section {
     padding: 20px;
 }

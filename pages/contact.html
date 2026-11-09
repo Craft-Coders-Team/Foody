@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Foody. Send us your questions or feedback and we'll get back to you as soon as possible." />
+    <meta name="author" content="Amany Mohamed and Assem Karam" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/header-hero.css">
+    <link rel="stylesheet" href="../css/contact-footer.css">
+    <title>Contact Us</title>
+
+    
+</head>
+
+<body>
+    <!-- header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html#home" class="site-header__logo">Foody</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu"
+                aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <nav id="primary-nav" class="site-nav" aria-label="Primary">
+                <ul class="site-nav__list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Recipts/index.html">Recipes</a></li>
+                    <li><a href="contact.html" class="is-active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- contact -->
+    <main>
+        <section class="contact-us" id="contact">
+            <h1>Contact Us</h1>
+            <p class="intro">Have questions or feedback? We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
+
+            <form id="contactForm">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="field">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                </div>
+                <div class="actions">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">© 2025 Developed by Eng. Assem Karam &amp; Amany Mohammed</footer>
+
+    <script>
+        // Mobile menu toggle
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('primary-nav');
+        toggle.addEventListener('click', function () {
+            var open = nav.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+
+        // Form submit
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

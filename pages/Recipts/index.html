@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/header-hero.css">
     <link rel="stylesheet" href="style.css">
-    
     <title>Foody</title>
 </head>
 <body>
-    <header>
-        <h1>Foody</h1>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+   <header class="site-header">
+        <div class="site-header__inner">
+            <a href="index.html#home" class="site-header__logo">Foody</a>
+            <button class="nav-toggle" type="button" aria-label="Open menu"
+                aria-expanded="false" aria-controls="primary-nav">
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+                <span class="nav-toggle__bar"></span>
+            </button>
+            <nav id="primary-nav" class="site-nav" aria-label="Primary">
+                <ul class="site-nav__list">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="index.html">Recipes</a></li>
+                    <li><a href="../contact.html" class="is-active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <p>Discover our diverse collection of recipes, each with its own unique flavors and ingredients.</p>
