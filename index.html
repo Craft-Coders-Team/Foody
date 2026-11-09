@@ -8,7 +8,7 @@
     <meta name="twitter:image" content="/images/logo.png" />
     <meta name="description" content="Foody is a modern restaurant website designed to showcase food items through an attractive and user-friendly interface. It focuses on clean layouts, appealing visuals, and responsive design to provide a smooth browsing experience across desktop and mobile devices." />
     <meta name="keywords" content="restaurant website, food items, modern design, responsive layout, user-friendly interface, attractive visuals, clean layouts, browsing experience" />
-    <meta name="author" content="Amany Mohamed" />
+    <meta name="author" content="Amany Mohamed and Assem Karam" />
     <meta name="robots" content="index, follow" />
 
     <title>FOODY | Our Top Recipes</title>
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header-hero.css">
     <link rel="stylesheet" href="css/chefs.css">
+    <link rel="stylesheet" href="css/contact-footer.css">
     <script src="main.js" defer></script>
 </head>
 
@@ -217,6 +218,39 @@
             </div>
         </div>
     </section>
+    <section class="contact-us">
+        <h1>Contact Us</h1>
+    <p class="intro">Have questions or feedback? We'd love to hear from you! Fill out the form below, and we'll get back to you as soon as possible.</p>
 
+    <form id="contactForm">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="field">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+      </div>
+      <div class="actions">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    </section>
+    <footer>© 2025 Developed by Eng. Assem Karam &amp; Eng. Amany Mohammed</footer>
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you! Your message has been sent.');
+      this.reset();
+    });
+  </script>
 </body>
 </html>
